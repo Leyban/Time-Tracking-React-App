@@ -27,16 +27,16 @@ const Schedule = (props) => {
                     <div className="sched-details">
                         <div className="sched-top-row">
                             <p>{act.title}</p>
-                            <a href="#"><img src={ellipsis} alt="mini menu button" /></a>
+                            <a href="#profile"><img src={ellipsis} alt="mini menu button" /></a>
                         </div>
 
-                            {database.map(activeData => { if(activeData.title == act.title){
+                            {database.map(activeData => { if(activeData.title === act.title){
                                 return (
                                     <div className="sched-bottom-row" key={activeData.title}>
                                         <h1>{activeData.timeframes[props.timeSpan].current}hrs</h1>
                                         <p>Last Week - {activeData.timeframes[props.timeSpan].previous}hrs</p>
                                     </div> 
-                                )
+                                );
                             }})}
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 {
-  "name": "time-tracking-dashboard-hub",
-  "homepage": "https://Leyban.github.io/time-tracking-dashboard-hub",
+  "name": "time-tracking-react-app",
+  "homepage": "https://Leyban.github.io/Time-Tracking-React-App/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
