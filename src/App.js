@@ -7,16 +7,16 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path='/Time-Tracking-Dashboard-hub/'>
+          <Route exact path='/'>
             <Schedule timeSpan='weekly'/>
           </Route>
-          <Route path='/Time-Tracking-Dashboard-hub/daily'>
+          <Route path='/Time-tracking-dashboard-hub/daily'>
             <Schedule timeSpan='daily'/>
           </Route>
-          <Route path='/Time-Tracking-Dashboard-hub/monthly'>
+          <Route path='/Time-tracking-dashboard-hub/monthly'>
             <Schedule timeSpan='monthly'/>
           </Route>
-          <Route path='/Time-Tracking-Dashboard-hub/weekly'>
+          <Route path='/Time-tracking-dashboard-hub/weekly'>
             <Schedule timeSpan='weekly'/>
           </Route>
         </Switch>
