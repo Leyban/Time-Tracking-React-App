@@ -27,7 +27,7 @@ const Schedule = (props) => {
                     <div className="sched-details">
                         <div className="sched-top-row">
                             <p>{act.title}</p>
-                            <a href="#profile"><img src={ellipsis} alt="mini menu button" /></a>
+                            <button><img src={ellipsis} alt="mini menu button" /></button>
                         </div>
 
                             {database.map(activeData => { if(activeData.title === act.title){

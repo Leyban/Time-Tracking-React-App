@@ -1,5 +1,5 @@
 import Schedule from "./Schedule";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 function App() {
@@ -7,16 +7,16 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path='/Time-Tracking-React-App/'>
+          <Route exact path='/'>
             <Schedule timeSpan='weekly'/>
           </Route>
-          <Route path='/Time-Tracking-React-App/daily'>
+          <Route path='/daily'>
             <Schedule timeSpan='daily'/>
           </Route>
-          <Route path='/Time-Tracking-React-App/monthly'>
+          <Route path='/monthly'>
             <Schedule timeSpan='monthly'/>
           </Route>
-          <Route path='/Time-Tracking-React-App/weekly'>
+          <Route path='/weekly'>
             <Schedule timeSpan='weekly'/>
           </Route>
         </Switch>

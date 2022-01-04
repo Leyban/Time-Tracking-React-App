@@ -18,17 +18,20 @@ const Profile = (props) => {
 
         if(mode === 'daily'){
             setDaily('active');
-            history.push('/Time-Tracking-React-App/daily');
+            console.log("handleClicked daily");
+            history.push('/daily');
         } else if (mode === 'weekly'){
             setWeekly('active');
-            history.push('/Time-Tracking-React-App/weekly');
+            console.log("handleClicked weekly");
+            history.push('/weekly');
         } else {
             setMonthly('active');
-            history.push('/Time-Tracking-React-App/monthly');
+            console.log("handleClicked monthly");
+            history.push('/monthly');
         }
     }
 
-    useEffect(() => {handleClick(props.timeSpan);},[])
+    useEffect(() => {handleClick(props.timeSpan);},[]);
     
 
     return (  
@@ -39,9 +42,9 @@ const Profile = (props) => {
                 <h3>{user}</h3>
             </div>
             <ul>
-                <li><a href="#profile" className={daily} id='daily' onClick={(e) => handleClick(e.target.id)}>Daily</a></li>
-                <li><a href="#profile" className={weekly} id='weekly' onClick={(e) => handleClick(e.target.id)}>Weekly</a></li>
-                <li><a href="#profile" className={monthly} id='monthly' onClick={(e) => handleClick(e.target.id)}>Monthly</a></li>
+                <li><button className={daily} id='daily' onClick={(e) => handleClick(e.target.id)}>Daily</button></li>
+                <li><button className={weekly} id='weekly' onClick={(e) => handleClick(e.target.id)}>Weekly</button></li>
+                <li><button className={monthly} id='monthly' onClick={(e) => handleClick(e.target.id)}>Monthly</button></li>
             </ul>
         </div>
     );
